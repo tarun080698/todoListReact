@@ -17,7 +17,7 @@ class App extends Component {
       todos: todos
     });
   }
-
+  // Consolas,
   addItem = (item) =>{
     item.id = Math.random(100)
     let todos = [...this.state.todos, item]
@@ -37,3 +37,6 @@ class App extends Component {
   }
 }
 export default App;
+
+
+
