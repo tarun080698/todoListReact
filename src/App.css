@@ -1,3 +1,65 @@
 .App {
   text-align: center;
 }
+
+html {
+  background-color: black;
+}
+
+span.left {
+  width: 100%;
+  height: auto;
+  border-left: 6px solid #f80000;
+  color: rgb(252, 252, 252);
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+p {
+  font-size: 26px;
+  margin: 0px;
+  width: 100%;
+  
+}
+
+
+h1{
+  background-position: center;
+  margin-top: 30px;
+  width: max-content;
+  color: whitesmoke;
+  border-bottom: 3px solid #f80000;
+}
+
+input[type="text"] {
+  color: whitesmoke;
+  margin: 0;
+}
+
+button {
+  width: auto;
+  height: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 1%;
+  background-color: black;
+  border: 3px solid #f80000;
+  color: red;
+  font-size: 30px;
+  font-weight: 600;
+  position: absolute;
+}
+
+button:hover{
+  background-color: rgb(150, 39, 39);
+  outline: rgb(255, 255, 255) auto 8px;
+  color: black;
+}
+
+.collection-item {
+  position: relative;
+}
+
+.fa:hover {
+  transform: scale(2);
+}

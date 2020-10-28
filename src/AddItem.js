@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../src/App.css'
 
 class AddItem extends Component {
   state = {
@@ -6,37 +7,39 @@ class AddItem extends Component {
   };
 
   handleChange = (e) => {
-    this.setState({ task: e.target.value });
+    if(e.target.value.trim() !== "")
+      this.setState({ task: e.target.value });
   };
 
   
   handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
-    if (this.state.task === "") {
-      alert("task cannot be empty");
+    if (this.state.task === "") 
       return false;
-    } else {
+    else
       this.props.item(this.state);
-    }
+  
     this.setState({
       task: "",
     });
   };
+  
   render() {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
           <h5>Add new Task</h5>
-          <input
+            <span><input
             type="text"
-            placeholder="enter you task here"
+            placeholder="what's on your mind..."
             onChange={this.handleChange}
             value={this.state.task}
-          />
-          <button>Add</button>
+            required
+          /><button>Add</button></span>
         </form>
       </div>
+        
     );
   }
 }
