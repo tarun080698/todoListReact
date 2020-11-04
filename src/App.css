@@ -12,24 +12,24 @@ span.left {
   border-left: 6px solid #f80000;
   color: rgb(252, 252, 252);
   margin-top: 40px;
+  padding-left: 14px;
   font-size: 20px;
 }
 
 p {
   font-size: 26px;
-  margin: 0px;
-  width: 100%;
-  
+  width: max-content;
+  display: contents;
 }
 
-
-h1{
+h1 {
   background-position: center;
   margin-top: 30px;
   width: max-content;
   color: whitesmoke;
   border-bottom: 5px solid #f80000;
-  text-shadow: -2px -2px 0 #f74747, 2px -2px 0 #f80000, -2px 2px 0 #f3b1b1, 2px 2px 0 #9b7e7e;
+  text-shadow: -2px -2px 0 #f74747, 2px -2px 0 #f80000, -2px 2px 0 #f3b1b1,
+    2px 2px 0 #9b7e7e;
 }
 
 input[type="text"] {
@@ -51,7 +51,7 @@ button {
   position: absolute;
 }
 
-button:hover{
+button:hover {
   background-color: rgb(150, 39, 39);
   outline: rgb(255, 255, 255) auto 8px;
   color: black;
