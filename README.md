@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-This web-app is hosted here - https://master.d29tcitkb6bw5q.amplifyapp.com/
+
+Demo - https://master.d29tcitkb6bw5q.amplifyapp.com/
 
 ## Available Scripts
 
