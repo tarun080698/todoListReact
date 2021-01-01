@@ -18,7 +18,6 @@ class App extends Component {
     });
   }
 
-  // Consolas,
   addItem = (item) =>{
     item.id = Math.random(100)
     let todos = [...this.state.todos, item]
