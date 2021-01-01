@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Todos from "./todo";
+import Todo from "./todo";
 import AddItem from "./AddItem"
 
 class App extends Component {
@@ -31,7 +31,7 @@ class App extends Component {
       <div className="todo-app container">
         <h1 className="center grey-text"> To-Do List</h1>
         <AddItem item={this.addItem}/>
-        <Todos todos={this.state.todos} deleteTodo={this.deleteItem}/>
+        <Todo todos={this.state.todos} deleteTodo={this.deleteItem}/>
       </div>
     );
   }
